@@ -1,7 +1,6 @@
 #!/bin/bash
 # bash container.sh -n project_name
 
-REMOVE='--rm'
 while getopts rn: option
 do
 case "${option}"
