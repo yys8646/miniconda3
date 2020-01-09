@@ -22,7 +22,6 @@ RUN addgroup conda && \
   chgrp -R conda /opt/conda && \
   chmod 770 -R /opt/conda
 
-RUN /opt/conda/bin/conda install -y jupyter notebook && \
-  /opt/conda/bin/jupyter notebook --generate-config
+RUN /opt/conda/bin/conda install -y jupyter notebook
 
 CMD [ "/bin/bash" ]
